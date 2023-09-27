@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController {
 
@@ -31,5 +32,10 @@ class HomeController extends AbstractController {
         $parameters = $request->query->all();
         dump($parameters);
         return new Response($parameter);
+    }
+
+    #[Route('/')]
+    public function homepage(){
+        die('I just modified the Homepage of my Symfony Project !');
     }
 }

@@ -1,0 +1,25 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+accueil:
+    path: /accueil
+    controller: App\Controller\HomeController::hello
+
+goodbye:
+    path: /goodbye
+    controller: App\Controller\HomeController::goodBye
+
+redirecttogoogle:
+    path: /redirecttogoogle
+    controller: App\Controller\HomeController::redirectToGoogle
+
+showtemplate:
+    path: /showtemplate
+    controller: App\Controller\HomeController::showtemplate
+
+showproducts:
+    path: /showproducts
+    controller: App\Controller\HomeController::showProducts

@@ -4,9 +4,9 @@ controllers:
         namespace: App\Controller
     type: attribute
 
-accueil:
-    path: /accueil
-    controller: App\Controller\HomeController::hello
+# accueil:
+#     path: /accueil
+#     controller: App\Controller\HomeController::hello
 
 goodbye:
     path: /goodbye
@@ -23,3 +23,13 @@ showtemplate:
 showproducts:
     path: /showproducts
     controller: App\Controller\HomeController::showProducts
+
+accueil: 
+    path: /accueil 
+    controller: App\Controller\AccueilController::index
+
+contact_submit: 
+    path: /contact 
+    controller: App\Controller\ContactController::submit 
+    methods: POST
+

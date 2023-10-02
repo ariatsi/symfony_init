@@ -34,7 +34,7 @@ class HomeController extends AbstractController {
         return new Response($parameter);
     }
 
-    #[Route('/')]
+    //#[Route('/')]
     public function homepage(){
         die('I just modified the Homepage of my Symfony Project !');
     }
